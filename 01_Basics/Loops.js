@@ -139,7 +139,7 @@ coding.forEach((val)=>{
 })
 
 */
-
+/*
 
 
 const Mycoding =[
@@ -162,3 +162,6 @@ Mycoding.forEach((item)=>{
 
     console.log(item)
 })
+*/
+
+

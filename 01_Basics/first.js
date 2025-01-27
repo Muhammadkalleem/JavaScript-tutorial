@@ -88,7 +88,7 @@ tinder.login="hwell"
 
 
 
-const userid=[
+/*const userid=[
     {
         name:"Aslam ",
         age:21,
@@ -104,3 +104,17 @@ const userid=[
 ]
 
 console.log(userid[0].location)
+
+*/
+
+
+
+/*
+const arr=["Saleem","Nadeem","Akbar","Jumail"]
+
+arr.forEach((item)=>{
+
+    console.log(item)
+
+})
+*/
