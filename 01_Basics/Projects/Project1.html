@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer Scheme</title>
+    <style>
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .buttom {
+            width: 80px;  /* Increased width for rectangle */
+            height: 50px; /* Rectangle shape */
+            cursor: pointer;
+            border: 2px solid black;
+        }
+
+        #grey {
+            background-color: grey;
+        }
+
+        #green {
+            background-color: green;
+        }
+
+        #pink {
+            background-color: pink;
+        }
+
+        #white {
+            background-color: white;
+        }
+    </style>
+</head>
+<body style="background-color: orange;">
+
+    <h1 style="text-align: center;">
+        Switch one color to another color
+    </h1>
+
+    <div class="container">
+        <span class="buttom" id="grey"></span>
+        <span class="buttom" id="green"></span>
+        <span class="buttom" id="pink"></span>
+        <span class="buttom" id="white"></span>
+    </div>
+
+    <div>
+
+        <h2 style="text-align: center;">
+            You can easily change color just click it 
+        </h2>
+
+    </div>
+
+   
+
+   
+
+
+</body>
+<script src="Project1.js"></script>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML file connection</title>
+</head>
+<body style="background-color: #212121; color:azure">
+
+    <ul class="langauge">
+        <li>
+              JavaScript
+        </li>
+
+    </ul>
+
+    <script>
+           /*function  add (lang){
+
+               const li=document.createElement('li');
+                li.innerHTML=`${lang}`
+                document.querySelector('.langauge').appendChild(li)  
+
+
+              const Ve=document.createElement('li')
+              Ve.innerHTML='C++'
+            document.querySelector('.langauge').appendChild(Ve)
+
+            const We=document.createElement('li')
+              We.innerHTML='C+'
+             document.querySelector('.langauge').appendChild(We)
+             
+            const a=document.createElement('li')
+            a.innerHTML='Django'
+            document.querySelector('.langauge').appendChild(a)
+  }
+
+               add('Python')*/
+
+
+
+
+               function add(lang){
+                const li=document.createElement('li')
+                li.appendChild(document.createTextNode(lang))
+                document.querySelector('.langauge').appendChild(li)
+               }
+
+
+               add('golang')
+               add('sharp')
+               add('Dev C++')
+               add('OOP')
+
+
+               //Edit
+               const b=document.querySelector('li:nth-child(1)')
+
+
+               const changer=document.createElement('li')
+               changer.innerHTML='TypeScript'
+
+
+               b.replaceWith(changer)
+
+
+
+               const c=document.querySelector("li:nth-child(4)")
+
+               const newchange=document.createElement('li')
+               newchange.innerHTML='DSA'
+
+
+
+               c.replaceWith(newchange)
+
+
+
+
+              const s= document.querySelector('li:nth-child(3)')
+
+              s.outerHTML='<li> AI  <li>'
+
+
+
+     const  de=document.querySelector('li:last-child')
+     de.remove()
+
+               
+    </script>
+
+   
+
+    
+</body>
+</html>
