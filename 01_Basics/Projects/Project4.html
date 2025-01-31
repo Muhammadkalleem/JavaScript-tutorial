@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change Project</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click to Change Background Color</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+
+       function colormaker(){
+             hex='123456789ABCDEF'
+             color='#'
+
+             for(let i=0;i<6;i++){
+                   color +=hex(Math.floor(Math.random()*16))
+             }
+             return;
+       }
+
+
+
+    let invalid;
+
+    function getRandomColor() {
+            return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+        }
+
+    document.getElementById('start').addEventListener('click',function(){
+        if(!invalid){
+            invalid=setInterval(()=>{
+                 document.body.style.backgroundColor=getRandomColor();
+            },1000)
+        }
+    })
+
+
+     document.getElementById('stop').addEventListener('click',function(){
+           clearInterval(invalid);
+           invalid=null;
+     })
+
+    </script>
+
+</body>
+</html>

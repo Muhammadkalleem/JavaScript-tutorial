@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <h1 id="main"> Wellcome to my website</h1>
+
+       <button id="start">
+
+   START
+       </button>
+       <button id="stop">
+   STOP
+       </button>
+</body>
+
+
+<script>
+        /* const change = function(str){
+
+            console.log(" Hitesh malik ",`${str}`)
+
+         }*/
+        //  setInterval(change,1000,"hi")
+
+      const start  =   document.getElementById('start')
+      const stop = document.getElementById('stop')
+
+      start.addEventListener('click',function(){
+         const st=    setInterval(() => {
+                console.log('Hitesh YOUTUBER')
+                
+             }, 1000);
+      })
+
+      stop.addEventListener('click',function(){
+          clearInterval(st)
+      })
+
+  
+</script>
+
+
+</html>

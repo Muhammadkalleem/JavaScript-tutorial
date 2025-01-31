@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Images Action perform</title>
+    <style>
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+ul li img {
+    margin-left: 40px;
+    justify-content: center;
+    width: 200px;  /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fills the area while maintaining aspect ratio */
+    border-radius: 5px;
+}
+
+
+    </style>
+</head>
+<body style="background-color: rgb(56, 56, 56);">
+    <ul id="images">
+        <li><img  src="1.jpeg" width="200px" alt="Image 1"></li>
+        <li><img  src="2.jpeg" width="200px" alt="Image 2"></li>
+        <li><img  src="3.jpeg" width="200px" alt="Image 3"></li>
+        <li><img  src="6.jpeg" width="200px" alt="image 4"></li>
+        <li><img  src="5.jpeg" width="200px" alt="Image 5"></li>
+    </ul>
+</body>
+
+<script>
+        const taker=document.querySelector('#images')
+
+        taker.addEventListener('click',function(e){
+            e.preventDefault();
+            if(e.target.tagName == 'IMG'){
+                let removal=e.target.parentNode;
+                removal.remove()
+            }
+
+        })
+</script>
+</html>

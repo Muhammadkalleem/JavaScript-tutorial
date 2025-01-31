@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Press Any Key</h1>
+    <div id="insert">
+        <p>Press any key to see the details...</p>
+    </div>
+
+    <script>
+        const insert = document.getElementById('insert');
+
+        document.addEventListener('keydown', function(e) {
+            insert.innerHTML = `
+                <table>
+                    <tr>
+                        <th>Key</th>
+                        <th>KeyCode</th>
+                        <th>Code</th>
+                    </tr>
+                    <tr>
+                        <td>${e.key === " " ? "Space" : e.key}</td>
+                        <td>${e.keyCode}</td>
+                        <td>${e.code}</td>
+                    </tr>
+                </table>`;
+        });
+    </script>
+
+</body>
+</html>
